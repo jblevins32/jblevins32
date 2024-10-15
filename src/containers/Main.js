@@ -21,6 +21,7 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 import Research from "./research/Research";
+import AboutMe from "./aboutMe/Aboutme";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -53,11 +54,12 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
-            <Skills />
+            <AboutMe />
             <Education />
             <Research />
             <StartupProject />
-            <StackProgress />
+            {/* <StackProgress /> */}
+            <Skills />
             <WorkExperience />
             <Achievement />
             <Blogs />

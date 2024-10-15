@@ -50,11 +50,32 @@ const socialMediaLinks = {
   display: true // Set true to display this section, defaults to false
 };
 
-// Skills Section
+// About Me
+
+const aboutMe = {
+  title: "About me",
+  subTitle: (
+  <>
+  Thanks for stopping by! <br /> <br />I am a PhD and Masters student at Georgia Tech in Atlanta, Georgia. <br /> <br /> My objective is to develop artificially intelligent, deep learning-based solutions for robotic systems in order to bring the seemingly impossible into reality.  <br /><br /> My current research focuses on security of networked robotics, including, <br /> <br /> ⚡ Secure, modified, adaptive control with homomorphic encryption and false data injection detector, <br /><br /> ⚡ Secure, modified, adaptive control with homomorphic encryption and false data injection detector, <br /><br />⚡ Secure, modified, adaptive control with homomorphic encryption and false data injection detector, <br /><br /> Additionally, I care deeply for education and the advancement of knowledge through engineering education. <br /><br />Please take a look around and feel free to contact me via the "Contact Me" tab!
+
+  
+  </>),
+  skills: [
+    // emoji(
+    //   "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+    // ),
+    // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    // emoji(
+    //   "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    // )
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Skills section
 
 const skillsSection = {
-  title: "About me!",
-  subTitle: "ROBOTICIST WITH A PASSION FOR AUTONOMOUS VEHICLES AND EDUCATING THE NEXT GENERATION",
+  title: "Skill Set",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -271,6 +292,28 @@ const bigProjects = {
           url: "http://nextu.se/"
         }
       ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -307,6 +350,32 @@ const research = {
         {
           name: "Publication",
           url: "https://www.techrxiv.org/users/815499/articles/1216374-encrypted-model-reference-adaptive-control-with-false-data-injection-attack-resilience-via-somewhat-homomorphic-encryption-based-overflow-trap"
+        }
+      ]
+    },
+    {
+      title: "Affine Transformation-Based Perfectly Undetectable False Data Injection Attacks on Remote Manipulator Kinematic Control With Attack Detector",
+      subtitle:
+        "This letter demonstrates the viability of perfectly undetectable affine transformation attacks against robotic manipulators where intelligent attackers can inject multiplicative and additive false data while remaining completely hidden from system users",
+      image: require("./assets/images/shear.jpg"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Publication",
+          url: "https://ieeexplore.ieee.org/document/10654498"
+        }
+      ]
+    },
+    {
+      title: "Affine Transformation-Based Perfectly Undetectable False Data Injection Attacks on Remote Manipulator Kinematic Control With Attack Detector",
+      subtitle:
+        "This letter demonstrates the viability of perfectly undetectable affine transformation attacks against robotic manipulators where intelligent attackers can inject multiplicative and additive false data while remaining completely hidden from system users",
+      image: require("./assets/images/shear.jpg"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Publication",
+          url: "https://ieeexplore.ieee.org/document/10654498"
         }
       ]
     },
@@ -488,5 +557,6 @@ export {
   twitterDetails,
   isHireable,
   resumeSection,
-  research
+  research,
+  aboutMe
 };

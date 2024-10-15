@@ -1,19 +1,19 @@
 import React, {useContext} from "react";
-import "./Skills.scss";
+import "./Aboutme.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import {illustration, aboutMe} from "../../portfolio";
 import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/build.json";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import codingPerson from "../../assets/lottie/codingPerson.json";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie_aboutme";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function Skills() {
+export default function About() {
   const {isDark} = useContext(StyleContext);
-  if (!skillsSection.display) {
+  if (!aboutMe.display) {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div className={isDark ? "dark-mode main" : "main"} id="aboutMe">
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
@@ -28,34 +28,34 @@ export default function Skills() {
           </div>
         </Fade>
         <Fade right duration={1000}>
-          <div className="skills-text-div">
+          <div className="aboutMe-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              {aboutMe.title}{" "}
             </h1>
             <p
               className={
                 isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
+                  ? "dark-mode subTitle aboutMe-text-subtitle"
+                  : "subTitle aboutMe-text-subtitle"
               }
             >
-              {skillsSection.subTitle}
+              {aboutMe.subTitle}
             </p>
-            <SoftwareSkill />
+            {/* <SoftwareSkill /> */} 
             <div>
-              {skillsSection.skills.map((skills, i) => {
+              {aboutMe.skills.map((aboutme, i) => {
                 return (
                   <p
                     key={i}
                     className={
                       isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
+                        ? "dark-mode subTitle aboutMe-text"
+                        : "subTitle aboutMe-text"
                     }
                   >
-                    {skills}
+                    {aboutme}
                   </p>
                 );
               })}

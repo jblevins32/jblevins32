@@ -15,7 +15,8 @@ import {
   educationInfo,
   research,
   bigProjects,
-  podcastSection
+  podcastSection,
+  aboutMe
 } from "../../portfolio";
 
 function Header() {
@@ -31,6 +32,7 @@ function Header() {
   const viewResearch = research.display;
   const viewProjects = bigProjects.display;
   const viewPodcasts = podcastSection.display;
+  const viewAboutMe = aboutMe.display;
 
   return (
     <Headroom>
@@ -54,9 +56,9 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
+          {viewAboutMe && (
             <li>
-              <a href="#skills">About Me</a>
+              <a href="#aboutMe">About Me</a>
             </li>
           )}
           {viewEducation && (
@@ -77,6 +79,11 @@ function Header() {
           {viewExperience && (
             <li>
               <a href="#experience">Work Experience</a>
+            </li>
+          )}
+          {viewSkills && (
+            <li>
+              <a href="#skills">Skill Set</a>
             </li>
           )}
           {viewAchievement && (
