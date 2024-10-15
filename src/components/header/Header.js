@@ -11,7 +11,11 @@ import {
   blogSection,
   talkSection,
   achievementSection,
-  resumeSection
+  resumeSection,
+  educationInfo,
+  research,
+  bigProjects,
+  podcastSection
 } from "../../portfolio";
 
 function Header() {
@@ -23,6 +27,10 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
+  const viewEducation = educationInfo.display;
+  const viewResearch = research.display;
+  const viewProjects = bigProjects.display;
+  const viewPodcasts = podcastSection.display;
 
   return (
     <Headroom>
@@ -32,6 +40,11 @@ function Header() {
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
         </a>
+        <img 
+          src={require('../../assets/images/pfp.jpg')}
+          alt="Profile" 
+          className="profile-picture" 
+        />
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
@@ -43,37 +56,47 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">About Me</a>
+            </li>
+          )}
+          {viewEducation && (
+            <li>
+              <a href="#education">Education</a>
+            </li>
+          )}
+          {viewResearch && (
+            <li>
+              <a href="#research">Research</a>
+            </li>
+          )}
+          {viewProjects && (
+            <li>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
-            </li>
-          )}
-          {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#experience">Work Experience</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Awards</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs">EXTRA</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks">EXTRA</a>
             </li>
           )}
-          {viewResume && (
+          {viewPodcasts && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#podcast">EXTRA</a>
             </li>
           )}
           <li>

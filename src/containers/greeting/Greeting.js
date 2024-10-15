@@ -2,8 +2,8 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import waving_small from "../../assets/lottie/waving_small";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie_mainrobot";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
@@ -25,7 +25,7 @@ export default function Greeting() {
               >
                 {" "}
                 {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+                {/* <span className="wave-emoji">{emoji("👋")}</span> */}
               </h1>
               <p
                 className={
@@ -45,7 +45,7 @@ export default function Greeting() {
                     download="Resume.pdf"
                     className="download-link-button"
                   >
-                    <Button text="Download my resume" />
+                    <Button text="My resume" />
                   </a>
                 )}
               </div>
@@ -53,7 +53,7 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
+              <DisplayLottie animationData={waving_small} />
             ) : (
               <img
                 alt="man sitting on table"

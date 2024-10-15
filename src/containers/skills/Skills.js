@@ -4,7 +4,7 @@ import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie_aboutme";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {

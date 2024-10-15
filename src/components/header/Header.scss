@@ -7,6 +7,16 @@
 
 /* header */
 
+.profile-picture {
+  position: absolute; /* Absolute positioning to control placement */
+  top: 10px;          /* Move the image down from the top */
+  left: 20px;         /* Move the image to the left */
+  width: 75px;        /* Adjust the size of the image */
+  height: 75px;       /* Ensure it's square */
+  border-radius: 50%; /* Make it circular */
+  z-index: 1000;      /* Ensure it stays above other elements */
+}
+
 .dark-menu {
   background-color: $darkBackground !important;
   color: $textColorDark;
@@ -63,9 +73,13 @@
 .header .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
+  color: $buttonColor;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
+  position: absolute; /* Absolute positioning to control placement */
+  top: 25px;          /* Move the image down from the top */
+  left: 125px;         /* Move the image to the left */
 }
 
 /* menu */

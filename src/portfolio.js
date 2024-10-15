@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Jacob Blevins",
-  title: "Hi all, I'm Jacob",
+  title: "Hello! I'm Jacob,",
   subTitle: emoji(
-    "A passionate roboticist. This is a test 🚀"
+    "a passionate roboticist, eager to advance the human condition through the development of highly intelligent autonomous robotics."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,13 +33,13 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  linkedin: "https://www.linkedin.com/in/jacob-creed-blevins/",
+  gmail: "jacob.blevins@gatech.edu",
+  github: "https://github.com/jblevins32",
+//  gitlab: "https://gitlab.com/saadpasta",
+//  facebook: "https://www.facebook.com/saad.pasta7",
+//  medium: "https://medium.com/@saadpasta",
+//  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,8 +48,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "About me!",
+  subTitle: "ROBOTICIST WITH A PASSION FOR AUTONOMOUS VEHICLES AND EDUCATING THE NEXT GENERATION",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -65,8 +65,8 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "ROS",
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
       skillName: "css3",
@@ -126,10 +126,10 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      schoolName: "Georgia Institute of Technology",
+      logo: require("./assets/images/Georgia-Tech-Seal.png"),
+      subHeader: "Doctorate of Philosophy in Mechanical Engineering: Robotics and Controls",
+      duration: "May 2022 - May 2026 (Expected)",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -137,13 +137,38 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+      schoolName: "Georgia Institute of Technology",
+      logo: require("./assets/images/Georgia-Tech-Seal.png"),
+      subHeader: "Masters of Science in Computer Science: Machine Learning for Robotics",
+      duration: "Summer 2024 - May 2026 (Expected)",
+      desc: "Participated in the research of XXX and published 3 papers.",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
+      schoolName: "Georgia Institute of Technology",
+      logo: require("./assets/images/Georgia-Tech-Seal.png"),
+      subHeader: "Masters of Science in Mechanical Engineering: Design",
+      duration: "August 2020 - May 2021",
+      desc: "Participated in the research of XXX and published 3 papers.",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
+      schoolName: "Georgia Institute of Technology",
+      logo: require("./assets/images/Georgia-Tech-Seal.png"),
+      subHeader: "Bachelors of Science in Mechanical Engineering",
+      duration: "August 2016 - May 2020",
+      desc: "Participated in the research of XXX and published 3 papers.",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
   ]
 };
 
@@ -153,15 +178,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Controls", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Path Planning",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
+      Stack: "Sensor Fusion",
       progressPercentage: "60%"
     }
   ],
@@ -174,10 +199,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      role: "Mechanical Engineer Intern",
+      company: "CAT",
+      companylogo: require("./assets/images/CAT.jpg"),
+      date: "May 2019 – August 2019",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -212,7 +237,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
@@ -238,6 +263,57 @@ const bigProjects = {
         }
       ]
     }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Research Section
+
+const research = {
+  title: emoji("Research"),
+  subtitle:
+    "As networked robots become increasingly relevent, the security of such systems is imperative. Checkout my research below!",
+
+  achievementsCards: [
+    {
+      title: "Affine Transformation-Based Perfectly Undetectable False Data Injection Attacks on Remote Manipulator Kinematic Control With Attack Detector",
+      subtitle:
+        "This letter demonstrates the viability of perfectly undetectable affine transformation attacks against robotic manipulators where intelligent attackers can inject multiplicative and additive false data while remaining completely hidden from system users",
+      image: require("./assets/images/shear.jpg"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Publication",
+          url: "https://ieeexplore.ieee.org/document/10654498"
+        }
+      ]
+    },
+    {
+      title: "Encrypted Model Reference Adaptive Control with False Data Injection Attack Resilience via Somewhat Homomorphic Encryption-Based Overflow Trap",
+      subtitle:
+        "The presented research proposes an encrypted adaptive control framework that can be secured for cloud computing with encryption and without issues caused by encryption overflow and large execution delays.",
+      image: require("./assets/images/ciphertextoverflow.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Publication",
+          url: "https://www.techrxiv.org/users/815499/articles/1216374-encrypted-model-reference-adaptive-control-with-false-data-injection-attack-resilience-via-somewhat-homomorphic-encryption-based-overflow-trap"
+        }
+      ]
+    },
+    {
+      title: "Affine Transformation-Based Perfectly Undetectable False Data Injection Attacks on Remote Manipulator Kinematic Control With Attack Detector",
+      subtitle:
+        "This letter demonstrates the viability of perfectly undetectable affine transformation attacks against robotic manipulators where intelligent attackers can inject multiplicative and additive false data while remaining completely hidden from system users",
+      image: require("./assets/images/shear.jpg"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Publication",
+          url: "https://ieeexplore.ieee.org/document/10654498"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -372,18 +448,18 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "678-383-1625",
+  email_address: "jacob.blevins@gatech.edu"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -403,5 +479,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  research
 };

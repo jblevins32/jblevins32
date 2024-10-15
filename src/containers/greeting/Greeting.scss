@@ -8,6 +8,7 @@
 }
 .greet-main {
   width: 90%;
+  height: 50%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
@@ -27,11 +28,11 @@
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .button-greeting-div {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .download-link-button {
   text-decoration: none;
