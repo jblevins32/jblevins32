@@ -2,8 +2,8 @@ import React from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
-import Build from "../../assets/lottie/build";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import Build from "../../assets/lottie/NN";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie_NN";
 
 export default function StackProgress() {
   if (techStack.viewSkillBars) {

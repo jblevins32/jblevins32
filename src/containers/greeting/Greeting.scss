@@ -7,6 +7,8 @@
   margin-top: 4rem;
 }
 .greet-main {
+  position: relative; /* Absolute positioning to control placement */
+  top: 75px;          /* Move the image down from the top */
   width: 90%;
   height: 50%;
   padding: 20px 10px;

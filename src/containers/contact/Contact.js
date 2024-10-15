@@ -3,8 +3,8 @@ import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import email from "../../assets/lottie/mail2";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie_mail";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
@@ -35,7 +35,7 @@ export default function Contact() {
                     className="contact-detail"
                     href={"tel:" + contactInfo.number}
                   >
-                    {contactInfo.number}
+                    {"Phone: " + contactInfo.number}
                   </a>
                   <br />
                   <br />
@@ -45,7 +45,7 @@ export default function Contact() {
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
               >
-                {contactInfo.email_address}
+                {"Email: " + contactInfo.email_address}
               </a>
               <br />
               <br />

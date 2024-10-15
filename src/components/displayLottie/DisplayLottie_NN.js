@@ -4,7 +4,7 @@ import Loading from "../../containers/loading/Loading";
 
 export default class DisplayLottie extends Component {
   render() {
-    const {animationData, height, width, topOffset} = this.props; // Get topOffset from props
+    const {animationData, height, width, topOffset, speed} = this.props;
     const defaultOptions = {
       loop: true,
       autoplay: true,
@@ -16,13 +16,14 @@ export default class DisplayLottie extends Component {
         <Lottie
           animationData={defaultOptions.animationData}
           loop={defaultOptions.loop}
-          style={{ 
-            height: 1000, 
-            width: width,
-            position: 'relative', // Allow movement on the page
-            top: topOffset || '-175px',  // Use the topOffset to move it up or down
-            marginBottom: '-150px'  // Adjust to decrease bottom border/spacing
+          style={{
+            height: 550, 
+            width: 550,
+            position: 'relative',
+            top: topOffset || '50px',
+            left: this.props.leftOffset || '200px',
           }}
+          speed={speed || .001} // Use the speed prop to control animation speed
         />
       </Suspense>
     );

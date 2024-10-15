@@ -22,13 +22,18 @@ const illustration = {
 const greeting = {
   username: "Jacob Blevins",
   title: "Hello! I'm Jacob,",
-  subTitle: emoji(
-    "a passionate roboticist, eager to advance the human condition through the development of highly intelligent autonomous robotics."
+  subTitle: (
+    <>
+      a passionate roboticist, eager to advance the human condition through the development of highly intelligent autonomous robotics.
+      <br />      <br />
+      Oh, and I love teaching robotics too.
+    </>
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  displayGreeting: true
 };
+
 
 // Social Media Links
 
@@ -178,12 +183,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Controls", //Insert stack or technology you have experience in
+      Stack: "Controls, Systems", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Path Planning",
-      progressPercentage: "70%"
+      Stack: "Artificial Intelligence, Machine Learning, Deep Learning",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Sensor Fusion",
+      progressPercentage: "60%"
     },
     {
       Stack: "Sensor Fusion",
@@ -446,8 +455,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle: "",
   number: "678-383-1625",
   email_address: "jacob.blevins@gatech.edu"
 };

@@ -17,10 +17,11 @@ export default class DisplayLottie extends Component {
           animationData={defaultOptions.animationData}
           loop={defaultOptions.loop}
           style={{ 
-            height: 600, 
-            width: 750,
+            height: 700, 
+            width: width,
             position: 'relative', // Allow movement on the page
-            top: topOffset || '-50px'  // Use the topOffset to move it up or down
+            top: topOffset || '-100px',  // Use the topOffset to move it up or down
+            marginBottom: '-150px'  // Adjust to decrease bottom border/spacing
           }}
         />
       </Suspense>
