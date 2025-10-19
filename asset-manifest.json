@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.afe9a417.css",
-    "main.js": "/static/js/main.30c5519a.js",
+    "main.js": "/static/js/main.90970c1f.js",
     "static/css/487.3fc29f3b.chunk.css": "/static/css/487.3fc29f3b.chunk.css",
     "static/js/487.7a3a7716.chunk.js": "/static/js/487.7a3a7716.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
     "static/js/990.e2212136.chunk.js": "/static/js/990.e2212136.chunk.js",
+    "static/media/multirobot.gif": "/static/media/multirobot.152a548b2f6a757ae20c.gif",
     "static/media/photoTraj.png": "/static/media/photoTraj.143d1eeeb169c336c9a3.png",
+    "static/media/carracing.gif": "/static/media/carracing.d983c71d5d7ef3d86fb8.gif",
     "static/media/bboxes.jpg": "/static/media/bboxes.34c3510fe53ef2f12c00.jpg",
     "static/media/robonav.png": "/static/media/robonav.bc4c690e18b6d4bd2e22.png",
     "static/media/URImage.PNG": "/static/media/URImage.e9bf5321aa968f83a4f8.PNG",
     "static/media/ISAM_2024_Blevins_Poster.png": "/static/media/ISAM_2024_Blevins_Poster.6de8a9642f91996d12b1.png",
     "static/media/yolo_cone_detection_sim.png": "/static/media/yolo_cone_detection_sim.005b29f81e743f63cacf.png",
     "static/media/quad.png": "/static/media/quad.7d9c41cc824bdf15af28.png",
-    "static/media/Jacob Blevins -- Resume.pdf": "/static/media/Jacob Blevins -- Resume.730299c40670ac1ee0d9.pdf",
+    "static/media/Jacob Blevins -- Resume.pdf": "/static/media/Jacob Blevins -- Resume.0b0a38118610d7b97c05.pdf",
     "static/media/biped.png": "/static/media/biped.82d4dd129335bea82afb.png",
     "static/media/block_diagram.jpg": "/static/media/block_diagram.6169d21a5aac0ea72ba9.jpg",
     "static/media/MMM.jpg": "/static/media/MMM.040be9e86c1e9b49d560.jpg",
@@ -39,7 +41,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.afe9a417.css.map": "/static/css/main.afe9a417.css.map",
-    "main.30c5519a.js.map": "/static/js/main.30c5519a.js.map",
+    "main.90970c1f.js.map": "/static/js/main.90970c1f.js.map",
     "487.3fc29f3b.chunk.css.map": "/static/css/487.3fc29f3b.chunk.css.map",
     "487.7a3a7716.chunk.js.map": "/static/js/487.7a3a7716.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
@@ -47,6 +49,6 @@
   },
   "entrypoints": [
     "static/css/main.afe9a417.css",
-    "static/js/main.30c5519a.js"
+    "static/js/main.90970c1f.js"
   ]
 }
